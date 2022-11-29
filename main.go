@@ -13,8 +13,7 @@ needed.
 * The function is expected to return a STRING.
 * The function accepts STRING str as parameter.
 */
-func ModifyString(s string) string 
-{
+func ModifyString(s string) string {
 	rns := []rune(s) // convert to rune
     for i, j := 0, len(rns)-1; i < j; i, j = i+1, j-1 {
   
@@ -50,8 +49,7 @@ return ""
 return strings.TrimRight(string(str), "\r\n")
 }
 
-func checkError(err error) 
-{
+func checkError(err error) {
 	if err != nil {
 	panic(err)
 	}
